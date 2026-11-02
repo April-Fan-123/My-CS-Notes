@@ -1,0 +1,62 @@
+CS50x - Lecture 0: Scratch 
+ 
+Date: November 1-2, 2026 
+
+ 
+1. Basic knowledge of programming 
+ 
+Assignment operator 
+ 
+"=" is the assignment operator. 
+ 
+It assigns values to variables. 
+ 
+Example: 
+ 
+The answer is 42. 
+ 
+This stores the value 42 in the variable answer. 
+
+
+ 
+2. Use AI models through code 
+ 
+You can interact with OpenAI models without using the ChatGPT interface. 
+ 
+You can write your own code to call AI models through the OpenAI API. 
+ 
+Example: 
+ 
+Model = "gpt-5 
+ 
+The model parameters specify which model to use in the API request. 
+
+
+
+3. Computational thinking 
+ 
+Definition: Applying the concepts and methods of computer science to solve real-world problems. 
+ 
+Computer Science → Problem-solving 
+ 
+Break down complex problems into smaller and more manageable parts. 
+ 
+Formulate logical and systematic solutions. 
+
+
+ 
+4. Binary star system 
+ 
+Computers represent information in binary. 
+ 
+Binary number (bits) 
+ 
+A bit is the smallest unit of information in a computer. 
+ 
+A bit can only have two possible values: 0 or 1. 
+ 
+Key terms: 
+ 
+Binary number 
+ 
+One bit = a binary digit (0 or 1)
