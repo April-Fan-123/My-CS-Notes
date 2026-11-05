@@ -60,3 +60,163 @@ Key terms:
 Binary number 
  
 One bit = a binary digit (0 or 1)
+
+
+
+## November 4, 2026
+
+### 1. What is Computer Science?
+
+Computer Science is the study of computation, information, and problem-solving.
+
+Humans commonly use the **Base-10 (Decimal) system**, which uses digits from 0 to 9.
+
+Computers use the **Binary (Base-2) system**, which uses only 0 and 1.
+
+### 2. Binary System
+
+A binary digit is called a **bit**.
+
+- Bit = Binary Digit
+- One bit can represent either 0 or 1.
+- 8 bits = 1 byte.
+
+One byte can represent 256 different values (0–255).
+
+Example:
+
+`11111111` (Base 2) = `255` (Base 10)
+
+#### Decimal to Binary Conversion
+
+| Base-10 | Binary |
+|---:|---:|
+| 0 | 0 |
+| 1 | 1 |
+| 2 | 10 |
+| 3 | 11 |
+| 4 | 100 |
+| 5 | 101 |
+| 6 | 110 |
+| 7 | 111 |
+| 8 | 1000 |
+
+### 3. Representing Letters: ASCII
+
+Computers represent letters using numerical values.
+
+**ASCII** stands for American Standard Code for Information Interchange.
+
+Examples:
+
+| Character | Decimal (Base 10) |
+|---|---:|
+| A | 65 |
+| B | 66 |
+| C | 67 |
+| a | 97 |
+| b | 98 |
+| c | 99 |
+
+The difference between corresponding uppercase and lowercase letters is always 32.
+
+Example:
+- A = 65
+- a = 97
+- 97 - 65 = 32
+
+Therefore, we can convert an uppercase letter into its lowercase equivalent by adding 32 to its ASCII value.
+
+#### Binary Representation of Characters
+
+Example:
+
+| Character | Binary | Decimal |
+|---|---|---:|
+| H | 01001000 | 72 |
+| I | 01001001 | 73 |
+| ! | 00100001 | 33 |
+
+### 4. Unicode
+
+ASCII has limitations because it cannot represent all the characters used around the world.
+
+For example:
+- Chinese characters
+- Japanese characters
+- Accented letters
+- Emojis
+
+**Unicode** is a character encoding standard that supports characters from many languages and symbol systems.
+
+Key points:
+
+- Unicode includes ASCII as its first 128 characters.
+- Unicode supports far more characters than ASCII.
+- Unicode characters can be encoded using different encoding formats, such as UTF-8 and UTF-16.
+- UTF-8 uses between 1 and 4 bytes per character.
+
+#### Emojis
+
+Emojis are Unicode characters, not simply images.
+
+However, their visual appearance can differ between devices and platforms.
+
+For example, Apple's and Google's versions of the same emoji may look different.
+
+The underlying Unicode character remains the same, but companies can design their own graphical representations.
+
+### 5. Representing Colors: RGB System
+
+Computers can represent colors using the **RGB system**.
+
+RGB stands for:
+- Red
+- Green
+- Blue
+
+By combining different amounts of red, green, and blue, computers can produce a wide range of colors.
+
+Each RGB color channel has a value from 0 to 255.
+
+| Color | RGB Value |
+|---|---|
+| Black | (0, 0, 0) |
+| White | (255, 255, 255) |
+| Red | (255, 0, 0) |
+| Green | (0, 255, 0) |
+| Blue | (0, 0, 255) |
+
+- 0 = Minimum intensity
+- 255 = Maximum intensity
+
+Examples:
+
+- If all three values are 0, the result is black.
+- If all three values are 255, the result is white.
+
+### 6. Pixels and Images
+
+A **pixel** is an individual dot that collectively forms a digital image.
+
+- Every digital image consists of pixels.
+- Each pixel has its own color.
+- RGB values can be used to represent each pixel's color.
+
+The number of bits used to represent each pixel determines how many different colors can be represented.
+
+For example:
+- 1 bit per pixel = 2 possible colors.
+- 8 bits per pixel = 256 possible values.
+- 24 bits per pixel (8 bits per RGB channel) = approximately 16.7 million possible colors.
+
+---
+
+## Key Takeaways
+
+1. Computers use binary (Base-2), while humans commonly use decimal (Base-10).
+2. 1 byte = 8 bits.
+3. ASCII represents characters using numerical codes.
+4. Unicode supports characters from many languages and symbol systems.
+5. RGB represents colors using Red, Green, and Blue.
+6. Pixels are the individual building blocks of digital images.
