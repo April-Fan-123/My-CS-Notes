@@ -220,3 +220,126 @@ For example:
 4. Unicode supports characters from many languages and symbol systems.
 5. RGB represents colors using Red, Green, and Blue.
 6. Pixels are the individual building blocks of digital images.
+
+
+
+## November 5, 2026
+
+# 7. Algorithms
+
+### What is an Algorithm?
+
+An **algorithm** is a step-by-step set of instructions used to solve a problem or complete a task.
+
+Algorithms help computers solve problems efficiently.
+
+### 7.1 Plotting Algorithms on a Grid
+
+We can use a graph to compare the efficiency of different algorithms.
+
+- **X-axis:** Size of the problem (N)
+- **Y-axis:** Time required to solve the problem
+
+As the size of the problem increases, the time required may also increase.
+
+### 7.2 Example: Finding a Name in a Telephone Book
+
+**Problem:** Find a person's name that starts with H in a telephone book.
+
+There are three possible approaches:
+
+**Approach 1: One page at a time**
+
+- Start from the first page.
+- Check each page one by one.
+- Stop when you find the name.
+
+Time complexity: **O(N)**
+
+**Approach 2: Two pages at a time**
+
+- Check two pages at a time.
+- Continue until you find the target.
+
+This takes approximately half as many steps as checking one page at a time.
+
+Time complexity: **O(N)**
+
+Note: Although it is approximately twice as fast, its growth rate is still linear.
+
+**Approach 3: Divide and Conquer (Binary Search)**
+
+- Open the telephone book approximately in the middle.
+- Check whether the target name should be on the left or right side.
+- Discard the half that cannot contain the target.
+- Repeat the process with the remaining half.
+- Continue until you find the target.
+
+Time complexity: **O(log₂ N)**
+
+### 7.3 Comparing Algorithm Efficiency
+
+| Algorithm | Steps (approximately) | Time Complexity |
+|---|---|---|
+| One page at a time | N | O(N) |
+| Two pages at a time | N/2 | O(N) |
+| Divide the problem in half | log₂ N | O(log N) |
+
+**Example:**
+
+If a telephone book has 1,000 pages:
+
+- One page at a time: up to 1,000 steps.
+- Two pages at a time: up to 500 steps.
+- Binary search: approximately 10 steps.
+
+Binary search is much more efficient for large datasets.
+
+### 7.4 Key Concept: Logarithmic Growth
+
+In binary search, the size of the remaining problem is reduced by half after each step.
+
+For example:
+
+1,000 → 500 → 250 → 125 → 62 → 31 → 15 → 7 → 3 → 1
+
+This is why binary search has logarithmic time complexity: O(log₂ N).
+
+---
+
+# 8. Pseudocode
+
+**Pseudocode** is a way of describing an algorithm using simple, human-readable language rather than a specific programming language.
+
+It helps us plan the logic of a program before writing actual code.
+
+Key characteristics:
+
+- Easy for humans to understand.
+- Does not follow the strict syntax of a programming language.
+- Focuses on the logic and sequence of instructions.
+
+Example:
+
+```text
+1. Start
+2. Open the telephone book in the middle
+3. Look at the target name
+4. If the name is found:
+       Stop
+5. If the target name comes before the current page:
+       Search the left half
+6. Otherwise:
+       Search the right half
+7. Repeat until the name is found or no pages remain
+8. Stop
+```
+
+**Key Takeaways**
+
+1. An algorithm is a step-by-step method for solving a problem.
+2. The X-axis represents problem size; the Y-axis represents running time.
+3. O(N) represents linear growth.
+4. O(log N) represents logarithmic growth.
+5. Binary search uses the divide-and-conquer approach.
+6. Pseudocode describes an algorithm in a human-readable format.
