@@ -343,3 +343,196 @@ Example:
 4. O(log N) represents logarithmic growth.
 5. Binary search uses the divide-and-conquer approach.
 6. Pseudocode describes an algorithm in a human-readable format.
+
+
+
+
+## November 8, 2026
+
+# 9. Functions
+
+A **Function** is an action or a small piece of work that performs a specific task.
+
+Functions are like verbs: they tell the computer what to do.
+
+Examples:
+- `print()` – Display information.
+- `input()` – Receive information from the user.
+- `say()` – Make a character display a message.
+
+### 9.1 Arguments
+
+An **Argument** is an input given to a function.
+
+Example:
+
+```python
+print("Hello World")
+```
+
+- `print()` = Function
+- `"Hello World"` = Argument
+
+The argument tells the function what information to work with.
+
+### 9.2 Return Values
+
+A **Return Value** is the result that a function gives back to the program.
+
+The computer can use a return value in further calculations or operations, even if the result is not directly displayed to humans.
+
+Example:
+
+```python
+answer = input("What is your name? ")
+```
+
+The user's input is returned and stored in the variable `answer`.
+
+### 9.3 Side Effects
+
+A **Side Effect** is an observable action or change caused by a function.
+
+Examples:
+- Displaying text on the screen.
+- Playing a sound through a speaker.
+- Changing the appearance of an object.
+- Moving a character on the screen.
+
+**Difference:**
+- Return Value: A result returned to the program.
+- Side Effect: An action or change caused by the function.
+
+---
+
+# 10. Conditionals
+
+A **Conditional** is a programming structure that allows a computer to make decisions and choose which path to follow.
+
+It determines what happens depending on whether a condition is true or false.
+
+Example:
+
+```python
+if temperature > 30:
+    print("It is hot!")
+else:
+    print("It is not hot.")
+```
+
+The computer checks the condition and executes the appropriate path.
+
+---
+
+# 11. Boolean Expressions
+
+A **Boolean Expression** is an expression that evaluates to one of two possible values:
+
+- `True`
+- `False`
+
+It is similar to a yes-or-no question.
+
+Boolean values can also be represented as:
+- True = 1
+- False = 0
+
+Examples:
+
+```python
+5 > 3    # True
+5 < 3    # False
+5 == 5   # True
+```
+
+Boolean expressions are commonly used in conditionals and loops.
+
+---
+
+# 12. Loops
+
+A **Loop** is a programming structure that repeats a set of instructions.
+
+A loop can continue while a particular condition is true.
+
+Example:
+
+```python
+while answer != "yes":
+    answer = input("Do you agree? ")
+```
+
+The computer repeats the question until the condition becomes false.
+
+**Key Concept:**
+- Conditional = Decide which path to take.
+- Loop = Repeat instructions based on a condition.
+
+---
+
+# 13. Scratch
+
+**Scratch:** https://scratch.mit.edu
+
+Scratch is a visual programming language that allows users to create programs by connecting blocks instead of writing traditional code.
+
+### 13.1 Basic Scratch Example
+
+**Task:** When you click the green flag, display "Hello World".
+
+The program uses:
+- Event block: `When green flag clicked`
+- Action block: `Say "Hello World"`
+
+This demonstrates how an event triggers an action.
+
+### 13.2 Sprites
+
+A **Sprite** is an object or character in Scratch that can perform actions.
+
+Examples:
+- The default Scratch cat.
+- A person.
+- An animal.
+- A trash can.
+
+You can change a sprite's **Costume** to change its appearance without necessarily changing its behavior.
+
+### 13.3 Scratch Stage and Coordinates
+
+The Scratch stage uses a coordinate system to position sprites.
+
+| Axis | Coordinate Range |
+|---|---|
+| X-axis (horizontal) | -240 to +240 |
+| Y-axis (vertical) | -180 to +180 |
+
+Important:
+- X = Horizontal position (left and right).
+- Y = Vertical position (up and down).
+- (0, 0) = Center of the stage.
+
+The stage has:
+- Width: 480 coordinate units.
+- Height: 360 coordinate units.
+
+### 13.4 Pixels
+
+A **Pixel** is the smallest individual picture element in a digital image.
+
+Pixels combine to form images displayed on a screen.
+
+---
+
+# 14. Key Takeaways
+
+1. Functions perform specific tasks.
+2. Arguments are inputs given to functions.
+3. Return values provide results back to a program.
+4. Side effects are observable actions or changes.
+5. Conditionals allow computers to make decisions.
+6. Boolean expressions evaluate to True or False.
+7. Loops repeat instructions.
+8. Sprites are objects or characters in Scratch.
+9. Costumes change the appearance of sprites.
+10. Scratch uses an X-Y coordinate system to position sprites.
