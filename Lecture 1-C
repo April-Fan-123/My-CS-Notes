@@ -1,1 +1,313 @@
+CS50x – Lecture 1: C
 
+November 10, 2026
+
+1. Source Code and Machine Code
+
+- Source Code 源代码: The code programmers write. It is designed to be readable and understandable by humans.
+- Machine Code 机器代码: The instructions that computers understand and execute. At a basic level, these instructions are represented in binary (0s and 1s).
+
+The compilation process:
+
+
+Source Code  →  Compiler  →  Machine Code
+
+
+A compiler translates source code into machine code so that the computer can execute the program.
+
+
+
+Syntax Highlighting
+
+C has syntax highlighting, which means different parts of the code appear in different colors in the code editor.
+
+You do not need to worry about the colors. They simply help make the code easier to read.
+
+
+Terminal
+
+The bottom part of VS Code is the **Terminal**, where you can type and run commands.
+
+
+
+2. GUI and CLI
+
+- **GUI (Graphical User Interface):** An interface that allows users to interact with a computer through visual elements, such as windows, icons, and buttons.
+- **CLI (Command-Line Interface):** An interface that allows users to interact with a computer by typing commands in a terminal.
+
+
+
+3. Hello, World!
+
+A traditional first program in C is called "Hello, World!". It prints a message on the screen.
+
+ Step 1: Create a C file
+
+
+code hello.c
+
+
+"code" is a command that opens VS Code. "hello.c" is the name of the new C source file.
+
+
+Step 2: Compile the program
+
+
+make hello
+
+
+- "make" compiles the source code into an executable program.
+- "hello" is the name of the executable file that will be created.
+- The compiler automatically looks for a source file named "hello.c".
+
+The result is an executable file called "hello" (without the ".c" extension).
+
+
+
+Step 3: Run the program
+
+
+./hello
+
+
+- "." represents the current directory.
+- "/" separates the directory from the file name.
+- "./hello" tells the computer to run the executable named `hello` in the current directory.
+
+
+
+4. Printing with printf()
+
+  What is printf()?
+
+"printf()" is a C function used to print formatted output.
+
+- "()" Parentheses: Used to contain the arguments of a function.
+- ""` stands for "formatted".
+
+
+Printing Text
+
+You need to put quotation marks around the text you want to print. This tells C that the text is a string, not a variable or another type of expression.
+
+
+printf("hello, world\n");
+
+
+Important parts:
+
+- "hello, world" is the text to print.
+- "\n" means a new line.
+- ";" A semicolon marks the end of a statement in C, similar to a period at the end of a sentence.
+
+
+Escape Sequences
+
+An escape sequence 转义序列 is a combination of characters that represents a special character or instruction.
+
+Common examples:
+
+| Escape Sequence | Meaning |
+|---|---|
+| \n | New line 换行 |
+| \r | Carriage return 回车 |
+| \" | Double quotation mark 双引号 |
+| \' | Single quotation mark 单引号 |
+| \\ | Backslash 反斜杠 |
+
+
+Clearing the Terminal
+
+There are two ways to clear the terminal:
+
+1. Press `Control + L`.
+2. Type `clear` and press Enter.
+
+
+5. Understanding Error Messages
+
+When a compiler reports an error, it usually tells you where the problem is.
+
+For example:
+
+
+hello.c:5:29
+
+
+This means:
+
+- hello.c: The name of the source file.
+- 5: The line number.
+- 29: The character position on that line.
+
+This helps programmers locate and fix errors.
+
+
+
+6. Header Files and Libraries
+
+C programs often use **header files**.
+
+- Header files usually end with ".h".
+- They contain declarations that allow programmers to use functions and other features provided by libraries.
+- Libraries contain reusable code written by other programmers.
+
+Example: stdio.h
+
+"stdio.h" stands for Standard Input/Output Header.
+
+It provides functions for input and output, such as "printf()".
+
+
+
+Manual Pages
+
+Programmers can use manual pages to check how libraries and functions work.
+
+- [CS50 Manual Pages](https://manual.cs50.io)
+- [CS50 Library – cs50.h](https://manual.cs50.io/#cs50.h)
+
+These resources explain what functions do, what arguments they require, and what values they return.
+
+
+
+7. Functions and Strings
+
+  What is a Function?
+
+A function is a reusable block of code that performs a particular task.
+
+
+get_string()
+
+"get_string()" is a function from the CS50 library that asks the user to enter text and returns that text.
+
+A string is a sequence of zero or more characters.
+
+For example:
+
+
+HELLO
+
+
+This is a string because it consists of text characters, rather than representing a numerical value such as `50`.
+
+
+
+Asking for the User's Name
+
+
+string answer = get_string("What's your name? ");
+
+printf("hello, %s\n", answer);
+
+
+Explanation:
+
+- string: Tells the computer the data type of the variable.
+- answer: The variable name used to store the user's input.
+- =: The assignment operator, which assigns a value to a variable.
+- get_string(): Gets text entered by the user.
+- "What's your name? ": The prompt displayed on the screen.
+- %s: A placeholder for a string.
+- answe`: The variable whose value replaces `%s` when the output is printed.
+
+The "get_string()" function displays the prompt and waits for the user to enter text. It then stores the returned text in the variable `answer`.
+
+
+Understanding %s
+
+`%s` is a format specifier used by "printf()" to represent a string.
+
+For example:
+
+
+string answer = get_string("What's your name? ");
+
+printf("hello, %s\n", answer);
+
+
+If the user enters:
+
+
+April
+
+
+The output will be:
+
+
+hello, April
+
+
+
+8. Terminal Commands
+
+Terminal commands allow programmers to interact with files and directories using the CLI.
+
+| Command | Function |
+|---|---|
+| cd | Change directory (folder) |
+| cp | Copy a file |
+| ls | List files and directories in the current directory |
+| mkdir | Create a new directory (folder) |
+| mv | Move or rename a file or directory |
+| rm | Remove a file |
+| rmdir | Remove an empty directory |
+
+Important Examples
+
+Change directory:
+
+cd folder_name
+
+
+Copy a file:
+
+cp file1 file2
+
+
+List files:
+
+ls
+
+
+Create a new folder:
+
+mkdir folder_name
+
+
+Rename a file:
+
+mv old_name new_name
+
+
+Move a file into a folder:
+
+mv file_name folder_name
+
+
+Remove a file:
+
+rm file_name
+
+
+Remove an empty directory:
+
+rmdir folder_name
+
+
+---
+
+
+Key Takeaways
+
+- Source code is written by programmers, while machine code is executed by computers.
+- A compiler translates source code into machine code.
+- `make hello` compiles `hello.c` into an executable named `hello`.
+- `./hello` runs the executable in the current directory.
+- `printf()` prints formatted output.
+- `\n` creates a new line.
+- Header files provide declarations for functions and other reusable features.
+- `get_string()` gets text input from the user.
+- `%s` is a placeholder for a string.
+- Terminal commands help manage files and directories.
