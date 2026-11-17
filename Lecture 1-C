@@ -311,3 +311,315 @@ Key Takeaways
 - `get_string()` gets text input from the user.
 - `%s` is a placeholder for a string.
 - Terminal commands help manage files and directories.
+
+
+
+November 12, 2026
+
+1. Conditionals
+
+Conditionals 条件语句 allow a program to make decisions and execute different blocks of code depending on whether a condition is true or false.
+
+1.1 if Statement
+
+An if statement executes its code block only when the condition is true.
+
+Syntax:
+
+if (condition)
+{
+    // Code to execute if the condition is true
+}
+
+Example:
+
+int x = 2;
+int y = 3;
+
+if (x < y)
+{
+    printf("x is less than y\n");
+}
+
+Since 2 < 3 is true, the program prints:
+
+x is less than y
+
+Indentation: Code inside the curly braces { } is usually indented by 4 spaces to make it easier to read.
+
+1.2 if-else Statement
+
+An if-else statement provides two possible paths:
+
+If the condition is true, execute the if block.
+
+Otherwise, execute the else block.
+
+Example:
+
+if (x < y)
+{
+    printf("x is less than y\n");
+}
+else
+{
+    printf("x is not less than y\n");
+}
+
+1.3 if-else if-else Statement
+
+When comparing two numbers, there are three possible relationships:
+
+x < y
+
+x > y
+
+x == y
+
+Example:
+
+if (x < y)
+{
+    printf("x is less than y\n");
+}
+else if (x > y)
+{
+    printf("x is greater than y\n");
+}
+else
+{
+    printf("x is equal to y\n");
+}
+
+The final else handles the remaining possibility: x == y.
+
+This is more concise than writing another else if (x == y) because if the first two conditions are false, the numbers must be equal.
+
+2. Operators
+
+Operators are symbols used to perform operations or compare values.
+
+Comparison Operators
+
+Operator
+
+Meaning
+
+<
+
+Less than 小于
+
+<=
+
+Less than or equal to 小于或等于
+
+>
+
+Greater than 大于
+
+>=
+
+Greater than or equal to 大于或等于
+
+==
+
+Equal to 等于
+
+!=
+
+Not equal to 不等于
+
+Assignment Operator
+
+Operator
+
+Meaning
+
+=
+
+Assigns a value to a variable
+
+Important difference:
+
+x = 5;
+
+Assigns the value 5 to x.
+
+x == 5
+
+Checks whether x is equal to 5.
+
+The exclamation mark ! means logical NOT, which reverses a Boolean value:
+
+!true becomes false.
+
+!false becomes true.
+
+3. Data Types
+
+A data type determines what kind of value a variable can store.
+
+Type
+
+Meaning
+
+CS50 Input Function
+
+bool
+
+A Boolean value: true or false
+
+—
+
+char
+
+A single character, not a string of multiple characters
+
+get_char()
+
+float
+
+A floating-point number, which can contain decimal places
+
+get_float()
+
+double
+
+A floating-point type with greater precision than float
+
+get_double()
+
+int
+
+An integer, including positive numbers, zero, and negative numbers
+
+get_int()
+
+long
+
+A larger integer type than int
+
+get_long()
+
+string
+
+A sequence of zero or more characters
+
+get_string()
+
+3.1 bool
+
+Stores one of two values: true or false.
+
+Useful for conditions and decision-making.
+
+3.2 char
+
+Represents a single character, such as 'A', 'b', or '7'.
+
+Different from a string, which can contain multiple characters.
+
+3.3 float
+
+Represents floating-point numbers (numbers with decimal places).
+
+Typically uses 32 bits of memory.
+
+Can represent a wide range of values, but has limited precision.
+
+3.4 double
+
+Also represents floating-point numbers.
+
+Typically uses 64 bits of memory.
+
+Provides greater precision than float.
+
+3.5 int
+
+Represents integers, including positive numbers, zero, and negative numbers.
+
+Typically uses 32 bits of memory.
+
+3.6 long
+
+Represents larger integer values than int on many systems.
+
+Its exact size depends on the computer system and compiler.
+
+3.7 string
+
+Represents text consisting of zero or more characters.
+
+For example: "Hello".
+
+Note: string is a CS50-specific type. In standard C, strings are represented using character arrays or character pointers.
+
+4. Format Specifiers
+
+Format specifiers are used inside printf() to indicate what type of value should be printed.
+
+Format Specifier
+
+Meaning
+
+%c
+
+Print a single character (char)
+
+%f
+
+Print a floating-point value
+
+%i
+
+Print an integer (int)
+
+%li
+
+Print a long integer (long)
+
+%s
+
+Print a string
+
+Examples
+
+Print a character:
+
+char letter = 'A';
+printf("%c\n", letter);
+
+Print a floating-point number:
+
+float price = 9.99;
+printf("%f\n", price);
+
+Print an integer:
+
+int age = 16;
+printf("%i\n", age);
+
+Print a long integer:
+
+long population = 8000000000;
+printf("%li\n", population);
+
+Print a string:
+
+string name = "April";
+printf("%s\n", name);
+
+Key Takeaways
+
+Conditionals allow programs to make decisions.
+
+if, else if, and else control which code gets executed.
+
+= assigns a value, while == compares two values.
+
+! represents logical NOT.
+
+Different data types store different kinds of values.
+
+Format specifiers such as %c, %f, %i, %li, and %s tell printf() what type of value to print.
