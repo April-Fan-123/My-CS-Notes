@@ -623,3 +623,205 @@ if, else if, and else control which code gets executed.
 Different data types store different kinds of values.
 
 Format specifiers such as %c, %f, %i, %li, and %s tell printf() what type of value to print.
+
+
+
+November 17, 2026
+
+1. Variables
+
+A variable is a named storage location used to hold data in a program.
+
+Example: Creating a Score Counter
+
+If we want to create a score indicator 计分器, we can use an integer because scores are whole numbers and we do not need decimal places.
+
+int counter = 0;
+
+int: The data type (integer).
+
+counter: The variable name.
+
+=: Assigns a value.
+
+0: The initial value.
+
+Increasing a Variable
+
+There are three ways to increase a variable by 1:
+
+counter = counter + 1;
+
+counter += 1;
+
+counter++;
+
+All three statements increase the value of counter by 1.
+
+2. Logical Operators
+
+Logical operators combine or modify conditions.
+
+Operator
+
+Meaning
+
+Example
+
+`
+
+
+
+`
+
+OR 或
+
+`x < 5
+
+
+
+x > 10`
+
+&&
+
+AND 且
+
+x > 5 && x < 10
+
+|| (OR): The condition is true if at least one expression is true.
+
+&& (AND): The condition is true only if both expressions are true.
+
+3. Loops
+
+A loop allows a program to repeat a block of code multiple times.
+
+Example: Making a Cat Meow 3 Times
+
+We can use a while loop or a for loop to repeat an action.
+
+3.1 While Loop – Counting Down
+
+#include <stdio.h>
+
+int main(void)
+{
+    int i = 3;
+
+    while (i > 0)
+    {
+        printf("meow\n");
+        i--;
+    }
+}
+
+Explanation:
+
+int i = 3;: Starts the counter at 3.
+
+while (i > 0): Repeats the code while i is greater than 0.
+
+printf("meow\n");: Prints "meow" on a new line.
+
+i--: Decreases the counter by 1 after each repetition.
+
+The loop runs when i is 3, 2, and 1. It stops when i becomes 0.
+
+Output:
+
+meow
+meow
+meow
+
+3.2 While Loop – Counting Up
+
+#include <stdio.h>
+
+int main(void)
+{
+    int i = 0;
+
+    while (i < 3)
+    {
+        printf("meow\n");
+        i++;
+    }
+}
+
+Explanation:
+
+int i = 0;: Starts the counter at 0.
+
+while (i < 3): Repeats the code while i is less than 3.
+
+printf("meow\n");: Prints "meow".
+
+i++: Increases the counter by 1 after each repetition.
+
+The loop runs when i is 0, 1, and 2. It stops when i becomes 3.
+
+Output:
+
+meow
+meow
+meow
+
+3.3 For Loop
+
+A for loop combines the initialization, condition, and update into one line.
+
+#include <stdio.h>
+
+int main(void)
+{
+    for (int i = 0; i < 3; i++)
+    {
+        printf("meow\n");
+    }
+}
+
+The three parts of a for loop:
+
+for (initialization; condition; update)
+
+Initialization: int i = 0 – Creates and initializes the counter.
+
+Condition: i < 3 – Checks whether the loop should continue.
+
+Update: i++ – Increases the counter after each repetition.
+
+The loop runs three times, printing "meow" each time.
+
+4. While Loop vs. For Loop
+
+While Loop
+
+For Loop
+
+Usually used when the number of repetitions is not known in advance
+
+Convenient when the number of repetitions is known
+
+Initialization and update are written separately
+
+Initialization, condition, and update are written together
+
+while (condition)
+
+for (initialization; condition; update)
+
+Key Takeaways
+
+Variables store information that can be used and changed in a program.
+
+counter++, counter += 1, and counter = counter + 1 all increase a variable by 1.
+
+|| means OR, while && means AND.
+
+Loops allow code to run repeatedly.
+
+A while loop checks its condition before each repetition.
+
+A for loop combines initialization, condition, and update in one statement.
+
+Always make sure the loop counter changes correctly; otherwise, the loop may never stop.
